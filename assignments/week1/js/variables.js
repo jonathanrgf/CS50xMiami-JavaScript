@@ -21,8 +21,8 @@ document.getElementById("teller").addEventListener("click", function(){
 
 	// create associative array of random female and male names
 	var fortune = {
-		'female': ["Kianna", "Amanda", "Kayleigh", "Avery", "Azaria", "Nydia"],
-		'male': ["Jonathan", "Christopher", "Kenneth", "Saulo", "Alan"],
+		'female': ["Kianna", "Amanda", "Kayleigh", "Avery", "Azaria", "Nydia", "Rima"],
+		'male': ["Jonathan", "Christopher", "Kenneth", "Saulo", "Alan", "Daniel", "Julian"],
 		'location': ["Canada", "Australia", "United States of America", "Sweden", "Mexico", "England", "Norway", "Germany", "Japan", "China", "New Zealand"],
 		'job': ["Software Developer", "Network Admin.", "Computer Engineering", "Doctor of Veterinary Medicine", "Recreation attendant Supervisor", "Pediatric Registered Nurse", "Director of Civil Defence", "Switchbox Assembler", "Grill Cook", "Airline Pilot Flight Instructor", "Internet Application Developer", "Geological Sample Tester", "Building Architect"]
 	}
@@ -57,6 +57,7 @@ document.getElementById("teller").addEventListener("click", function(){
 	// save fortune into a variable
 	yourFortune = "Zoltar Speaks.\n" + name + " you will be a " + job + " in " + location + ", and married to " + partner + " with " + childrenNumber + " kids.";
 
+	// Display fortune to user and console log it
 	alert(yourFortune);
 	console.log(yourFortune);
 });
@@ -72,7 +73,20 @@ Forgot how old someone is? Calculate it!
 - Output them to the screen like so: "They are either NN or NN", substituting the values.
 */
 document.getElementById("age").addEventListener("click", function(){
-   alert("Hello world");   
+   // store current year
+   var currentYear = new Date().getFullYear();
+   // prompt user for the birth year
+   var birthYear = prompt("Please enter your birth year");
+
+   // calculate their age
+   var age = currentYear - birthYear;
+
+   // store string to display user
+   var userAge = "You are " + (age - 1) + " or " + age + " years old.";
+
+   // log user age and display it.
+   console.log(userAge);
+   alert(userAge);
 });
 
 /*
@@ -86,7 +100,27 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 "You will need NN to last you until the ripe old age of X".
 */
 document.getElementById("lifetime").addEventListener("click", function(){
-   alert("Hello world");   
+   // store name of snack they want to calculate
+	var snack = prompt("Please Enter the name of the snack you want to calculate the life time supply");
+
+   // store current users age into a variable
+   var age = prompt("Please enter you age");
+
+   // store users max age expectancy into a variable
+   var maxAge = prompt("How old do you think you will be when you die?");
+
+   // store a user estimation of a snack ammount per day
+   var dailyAmount = prompt("How many " + snack + " do you consume daily.");
+
+   // calculate the number of days and assing it to var
+   var diffDays = (maxAge - age) * 365;
+   // calculate number of snacks needed
+   var totalSnack = diffDays * dailyAmount;
+   // store message to user
+   var lifeSupply = "You will need " + totalSnack + " " + snack + " for a lifetime suppply.";
+   // log message and display it to user
+   console.log(lifeSupply);
+   alert(lifeSupply);
 });
 
 /*
