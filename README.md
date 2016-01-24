@@ -1,3 +1,9 @@
 # CS50xMiami JavaScript Specialization Track
 
-TODO: 
+# TODO: Description
+
+# TODO: Assignments
+
+# TODO: Class Exercises
+
+# TODO: Class Notes
