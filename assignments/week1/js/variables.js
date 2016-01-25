@@ -21,8 +21,8 @@ document.getElementById("teller").addEventListener("click", function(){
 
 	// create associative array of random female and male names
 	var fortune = {
-		'female': ["Kianna", "Amanda", "Kayleigh", "Avery", "Azaria", "Nydia", "Rima"],
-		'male': ["Jonathan", "Christopher", "Kenneth", "Saulo", "Alan", "Daniel", "Julian"],
+		'female': ["Kianna", "Jennifer", "Samantha", "Amanda", "Kayleigh", "Avery", "Azaria", "Nydia", "Rima", "Lily", "Jessica", "Karen"],
+		'male': ["Jonathan", "Christopher", "Kenneth", "Saulo", "Alan", "Daniel", "Julian", "Krysttian", "Juan", "Edian", "Jorgue", "Tomas", "Vanesa", ""],
 		'location': ["Canada", "Australia", "United States of America", "Sweden", "Mexico", "England", "Norway", "Germany", "Japan", "China", "New Zealand"],
 		'job': ["Software Developer", "Network Admin.", "Computer Engineering", "Doctor of Veterinary Medicine", "Recreation attendant Supervisor", "Pediatric Registered Nurse", "Director of Civil Defence", "Switchbox Assembler", "Grill Cook", "Airline Pilot Flight Instructor", "Internet Application Developer", "Geological Sample Tester", "Building Architect"]
 	}
@@ -132,7 +132,24 @@ http://math2.org/math/geometry/circles.htm
 - Calculate the area based on the radius, and output "The area is NN".
 */
 document.getElementById("geometrizer").addEventListener("click", function(){
-   alert("Hello world");   
+   // prompt user for radius of a circle
+   var radius = prompt("Enter radius of a Circle");
+
+   // calculate and store circumference on variable
+   var circumference = 2 * Math.PI * radius;
+
+   // calculate and store the area on a variable
+   var area = Math.PI * Math.pow(radius, 2);
+
+   // store strings to allert
+   var message1 = "The circumference of circle is " + circumference + ".";
+   var message2 = "The area of circle is " + area + ".";
+
+   // log messages and alert user
+   console.log(message1 + "\n" + message2);
+   alert(message1 + "\n" + message2);
+
+
 });
 
 /*
@@ -145,5 +162,37 @@ http://www.mathsisfun.com/temperature-conversion.html
 - Convert it to celsius and output "NN°F is NN°C."
 */
 document.getElementById("temperature").addEventListener("click", function(){
-   alert("Hello world");   
+   
+   // promt user F to C or C to F
+
+   var cf = confirm("Do you want to convert celsius to farenheit?");
+   if (cf == false) {
+		var fc = confirm("Do you want to convert farenheit to celsius?");
+	}
+	if (cf == true) {
+		// prompt user for temp
+		var temp = prompt("Please enter temperature in Celsius");
+		// calculate temp in farenheit
+		var convertedTemp = ((temp * 9) / 5) + 32
+		// store message to display to user on variable
+		var message = temp + " Celsius is " + convertedTemp + " Farenheit"
+		// display convertion to user
+		alert(message);
+		console.log(message);
+	}
+	if (fc == true) {
+		// prompt user for temp
+		var temp = prompt("Please enter temperature in Celsius");
+		// calculate temp in farenheit
+		var convertedTemp = ((temp - 32) * 5) / 9;
+		// store message to display to user on variable
+		var message = temp + " Farenheit is " + convertedTemp + " Celsius"
+		// display convertion to user
+		alert(message);
+		console.log(message);
+	}
+	if ((fc == false && cf == false)){
+		alert("Why did you Select the Temperature Converter application!!!!!!!!???");
+		console.log("Why did you Select the Temperature Converter application!!!!!!!!???");
+	}
 });
