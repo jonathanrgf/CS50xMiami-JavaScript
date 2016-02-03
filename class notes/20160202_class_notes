@@ -1,0 +1,40 @@
+javascript track
+2/2/16
+week 3 class 4
+
+Subject of class
+	DOM
+
+
+Difference about browser platforms (64bit vs 32bit)
+	No difference "maybe"
+
+ES6: ecma script 6
+	not fully supported on all browsers
+
+	Transpilation
+		converts ES6 to the current standard
+
+	Bonus "Credit"
+		rewrite code into ES6 and transpile it
+
+TOOLS
+	jsPerf: for testing javascript preformance
+		preformance testing for javascript (jsperf.com)
+		created with benchmark.js
+
+Class exercise on JS Pref Lab
+
+DOM
+	Window object properties
+		properties: variables
+		methods: functions
+
+declare at the top globla variables 
+	
+methods/functions can be called before or after declaration
+	Functions/methods are moved to the top by javascript "hoisting"
+	variables are declare in the order as you declare it.
+	recomended to assing functionsn to variables
+	
+
