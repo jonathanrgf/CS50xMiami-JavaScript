@@ -1,45 +1,52 @@
-# Week 1 Assignment
-Complete variables.js and commit your work to Github. DUE Tuesday January 26th 2016, 6pm.
+# Week 2 Assignment
+Complete variables.js and commit your work to Github.
 
 
-## 0. The Fortune Teller
+## 0. The Fortune Teller part 2
 Why pay a fortune teller when you can just program your fortune yourself?
-- Store the following into variables:
-  number of children, partner's name, geographic location, job title.
-- Output your fortune to the screen like so:
-  "You will be a X in Y, and married to Z with N kids."
+Write a function named tellFortune that:
+- takes 4 arguments: number of children, partner's name, geographic location, job title.
+- outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+- Call that function 3 times with 3 different values for the arguments.
 
 
-## 1. The Age Calculator
-Forgot how old someone is? Calculate it!
-- Store the current year in a variable.
-- Store their birth year in a variable.
-- Calculate their 2 possible ages based on the stored values.
-- Output them to the screen like so: "They are either NN or NN", substituting the values.
+## 1. The Age Calculator part 2
+Forgot how old you are? Calculate it!
+Write a function named calculateAge that:
+- takes 2 arguments: birth year, current year.
+- calculates the 2 possible ages based on those years.
+- outputs the result to the screen like so: "You are either NN or NN"
+- Call the function three times with different sets of values.
+- Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
 
-## 2. The Lifetime Supply Calculator
+## 2. The Lifetime Supply Calculator part 2
 Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
-- Store your current age into a variable.
-- Store a maximum age into a variable.
-- Store an estimated amount per day (as a number).
-- Calculate how many you would eat total for the rest of your life.
-- Output the result to the screen like so:
-"You will need NN to last you until the ripe old age of X".
+Write a function named calculateSupply that:
+- takes 2 arguments: age, amount per day.
+- calculates the amount consumed for rest of the life (based on a constant max age).
+- outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
+- Call that function three times, passing in different values each time.
+- Bonus: Accept floating point values for amount per day, and round the result to a round number.
 
 
-## 3. The Geometrizer
-Calculate properties of a circle, using the definitions here:
+## 3. The Geometrizer part 2
+Create 2 functions that calculate properties of a circle, using the definitions here:
 http://math2.org/math/geometry/circles.htm
-- Store a radius into a variable.
+Create a function called calcCircumfrence:
+- Pass the radius to the function.
 - Calculate the circumference based on the radius, and output "The circumference is NN".
+Create a function called calcArea:
+- Pass the radius to the function.
 - Calculate the area based on the radius, and output "The area is NN".
 
 
-## 4. The Temperature Converter
+## 4. The Temperature Converter part 2
 It's hot out! Let's make a converter based on the steps here:
 http://www.mathsisfun.com/temperature-conversion.html
+Create a function called celsiusToFahrenheit:
 - Store a celsius temperature into a variable.
 - Convert it to fahrenheit and output "NN°C is NN°F".
+Create a function called fahrenheitToCelsius:
 - Now store a fahrenheit temperature into a variable.
 - Convert it to celsius and output "NN°F is NN°C."
